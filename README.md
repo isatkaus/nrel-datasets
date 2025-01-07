@@ -1,6 +1,6 @@
 # HSDS and nrel-rex setup
  
-### to get NREL WTK, NSRDB, Sup3rCC, etc. data from AWS we need HSDS and nrel-rex python package
+### to get NREL WTK, NSRDB, Sup3rCC, etc. data from AWS we need HSDS and nrel-rex
 
 ### instructions on setting up HSDS are taken/adjusted from
 
