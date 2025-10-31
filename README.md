@@ -11,17 +11,16 @@ https://github.com/HDFGroup/hsds
 ### create coda env
 
 ```
-conda create --name rex python=3.11 numpy pandas==2.1.2 jupyter matplotlib
-pip install cufflinks 
+conda create --name rex python=3.11 numpy pandas jupyter plotly h5py
+conda activate rex
 pip install nrel-rex[hsds]>=0.2.88
 pip install tables
 ```
-**_NOTE_** `cufflinks` are optional for easy df plotting with plotly (might give trouble with pandas 2.2.*)
 
 **_NOTE_** `tables` are optional to saving df's as .h5 (much faster read/write than .csv's for large amounts of data)
 
 
-### HSDS instructions below are for a mac  
+### HSDS instructions below are for a mac OS.  
 
 ### in your ~/.bash_profile add these lines
 ```
@@ -52,7 +51,7 @@ INFO:root:Ready after: 5.02 s
 READY! use endpoint: http://localhost:5101
 ```
 
-### start new terminal, activate conda rex env, and check server state
+### start NEW terminal, activate conda rex env, and check server state
 ```
 conda activate rex
 hsinfo
